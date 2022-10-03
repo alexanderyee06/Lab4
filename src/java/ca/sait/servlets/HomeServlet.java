@@ -35,6 +35,13 @@ public class HomeServlet extends HttpServlet {
                 response.sendRedirect("login");
                 return;
             }
+            String action = request.getParameter("action");
+
+            if (action != null && action.equals("logout")) {
+                request.getSession().invalidate();
+                response.sendRedirect("login");
+                return;
+            }
 
 
         this.getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
