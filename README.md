@@ -1,2 +1,2 @@
 # Lab4
- Simple login application
+ Simple login application with user validation.
