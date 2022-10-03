@@ -7,6 +7,17 @@ import ca.sait.models.User;
  * @author alexa
  */
 public class AccountService {
+    public AccountService() {
+
+    }
+
+  /**
+    * Login a user
+    * @param username Username
+    * @param password Password
+    * @return User instance if login credentials are correct or null;
+    */
+
     public User login(String username, String password) {
         if ("abe".equals(username) && "password".equals(password)) {
             User user = new User(username, password);

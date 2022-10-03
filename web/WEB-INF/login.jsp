@@ -28,6 +28,8 @@
                             </div>
                             <button type="submit" class="btn btn-primary mt-4">Submit</button>
                         </form>
+                    
+                        <p>${message}</p>
                 </div> 
             </div>
         </div>
